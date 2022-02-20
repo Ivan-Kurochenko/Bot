@@ -1,4 +1,7 @@
 # Bot
+#Java #Spring #Mysql
+
+
 This bot was created to convert currency. 
 
 
