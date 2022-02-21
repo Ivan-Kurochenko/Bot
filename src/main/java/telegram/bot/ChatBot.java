@@ -112,6 +112,7 @@ public class ChatBot extends TelegramLongPollingBot {
         try {
             execute(message);
         } catch (TelegramApiException e) {
+            userService.deleteAllActionsById(chatId);
             e.printStackTrace();
         }
     }
