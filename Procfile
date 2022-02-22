@@ -1,1 +1,1 @@
-
+worker: java DemoApplication.java
