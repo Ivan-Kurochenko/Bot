@@ -1,1 +1,1 @@
-worker: javac DemoApplication.java
+worker: jdk1.8 DemoApplication.java
