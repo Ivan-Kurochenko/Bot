@@ -10,7 +10,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-// добавить логирование
 public class Currency {
 
     public Currency(){}
@@ -57,7 +56,7 @@ public class Currency {
     }
 
     public boolean checkForInput(String text){
-        Pattern p = Pattern.compile("^([0-9]+[\\.]?[0-9]+)[\\s]+([a-zA-Z]{3})[\\s]+([a-zA-Z]{3})$");
+        Pattern p = Pattern.compile("^([0-9]+[\\.]?[0-9]*)[\\s]+([a-zA-Z]{3})[\\s]+([a-zA-Z]{3})$");
         Matcher m = p.matcher(text);
         return m.find();
     }
